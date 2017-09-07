@@ -1,0 +1,23 @@
+# A.R.9
+#análsisi de regresión
+#07092017
+
+
+x<-c(132,129,120,113.2,105,92,84,83.2,88.4,59,80,81.5,71,69.2)
+y<-c(46,48,51,52.1,54,52,59,58.7,61.6,64,61.4,54.6,58.8,58)
+mediax<- mean(x)
+mediay<-mean(y)
+sum(x)
+sum(y)
+sum(x*y)
+sxy<-sum(x*y)-(sum(x)*sum(y))/14
+sxy
+
+sxx<- sum(x^2)-(sum(x)^2)/14 
+sxx
+
+b1<-sxy/sxx
+b1
+
+b0<- mediay-b1*mediax
+b0
